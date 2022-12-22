@@ -1,0 +1,20 @@
+{% extends "admin/base.html" %}
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+    <a href="{% url 'admin:index' %}">
+       
+        <img src="/static/logo.png" height="60px" width="120"  />
+    </a>
+    CraneCRM
+</h1>
+
+<script>console.log(123);</script>
+
+
+{% endblock %}
+
+
+{% block nav-global %}{% endblock %}
+
